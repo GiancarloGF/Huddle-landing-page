@@ -1,0 +1,330 @@
+// VARIABLES
+$cpink: #FF52BF
+$clightpink: #FF8FD8
+$clightred: #FF4242
+
+$cvdarkcyan: #00252E
+$vpaleblue: #8f9397
+
+$ffpoppins: 'Poppins', sans-serif
+$ffopensans: 'Open Sans', sans-serif
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    width: 98.5vw
+    font-family: $ffpoppins
+    header
+        width: 100%
+        height: 100vh
+        position: relative
+        .header-header
+            width: 100%
+            height: 13%
+            display: flex
+            justify-content: space-between
+            align-content: center
+            padding: 20px 20px 0 20px
+            .header-logo
+                height: 50px
+                cursor: pointer
+            .header-btn
+                width: 200px
+                height: 50px
+                border: 1px solid $cpink
+                border-radius: 30px
+                color: $cpink
+                background-color: #fff
+                font-size: 1.5rem
+                outline: none
+                cursor: pointer
+                transition: all 0.5s ease
+                &:hover
+                    transform: scale(1.05)
+        .header-content
+            height: 87%
+            width: 80%
+            margin: auto
+            display: flex
+            flex-direction: column
+            align-content: center
+            // justify-content: center
+            text-align: center
+            padding-top: 150px
+            .build
+                color: $cvdarkcyan 
+                font-size: 3rem
+
+            .header-parag
+                color: $cvdarkcyan
+                font-size: 1rem
+                margin-top: 20px
+                font-weight: 600
+                font-family: $ffopensans
+                // width: 70%
+            .content-btn
+                width: 300px
+                height: 55px
+                // border: 1px solid $cpink
+                border-radius: 30px
+                color: #fff
+                background-color: $cpink
+                font-size: 1.5rem
+                outline: none
+                border: none
+                align-self: center
+                position: absolute
+                bottom: 40px
+                cursor: pointer
+                transition: all 0.5s ease   
+                &:hover
+                    transform: scale(1.05)
+    section
+        .statics-section
+            height: 100vh
+            width: 100%
+            padding: 0 10px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            .mockup
+                height: 70%
+                width: 100%
+                background-image: url('../images/screen-mockups.svg')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: contain
+                margin-bottom: 10px
+            .numbers
+                height: 20%
+                display: flex
+                justify-content: space-around
+                padding: 0 200px
+                text-align: center
+                line-height: 1.2
+        .grow-section
+            height: 95vh
+            width: 100%
+            background: url('../images/bg-section-top-desktop-1.svg'), url('../images/bg-section-bottom-desktop-1.svg') 
+            background-repeat: no-repeat
+            background-position: top,bottom
+            display: flex
+            // justify-content: cente
+            .grow-content
+                background-color: rgb(246,251,255)
+                height: 55%
+                width: 100%
+                align-self: center
+                display: flex
+                justify-content: space-between
+                align-content: center
+                .g-tog-text
+                    width: 40%
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    margin-left: 3%
+                    h1
+                        font-size: 2.5rem
+                        color: $cvdarkcyan
+                    p
+                        font-family: $ffopensans
+                        font-weight: normal
+                        color: $cvdarkcyan
+
+                .g-tog-svg
+                    width: 40%
+                    height: 100%
+                    background: url('../images/illustration-grow-together.svg')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    margin-right: 3%
+        .conversations-section
+            height: 95vh
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-content: center
+            .conv-sect-svg
+                width: 40%
+                height: 100%
+                background: url('../images/illustration-flowing-conversation.svg')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position-y: center
+                margin-left: 3%
+            .conv-sect-text
+                width: 35%
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                color: $cvdarkcyan
+                margin-right: 3%
+                h1
+                    font-size: 2.5rem
+                p
+                    color: $cvdarkcyan
+                    font-family: $ffopensans
+                    font-weight: normal
+        .users-section
+            height: 95vh
+            width: 100%
+            background: url('../images/bg-section-top-desktop-2.svg'), url('../images/bg-section-bottom-desktop-2.svg') 
+            background-repeat: no-repeat
+            background-position: top,bottom
+            display: flex
+            // justify-content: cente
+            .users-content
+                background-color: rgb(246,251,255)
+                height: 55%
+                width: 100%
+                align-self: center
+                display: flex
+                justify-content: space-between
+                align-content: center
+                .users-text
+                    width: 40%
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    margin-left: 3%
+                    h1
+                        font-size: 2.5rem
+                        color: $cvdarkcyan
+                    p
+                        font-family: $ffopensans
+                        font-weight: normal
+                        color: $cvdarkcyan
+
+                .users-svg
+                    width: 40%
+                    height: 100%
+                    background: url('../images/illustration-your-users.svg')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    margin-right: 3%
+        .ready-section
+            height: 95vh
+            width: 100%
+            // text-align: center
+            display: flex
+            align-content: center
+            justify-content: center
+            position: relative
+            h1
+                color: $cvdarkcyan
+                font-size: 3rem   
+                align-self: center
+            .ready-btn
+                width: 300px
+                height: 55px
+                // border: 1px solid $cpink
+                border-radius: 30px
+                color: #fff
+                background-color: $cpink
+                font-size: 1.5rem
+                outline: none
+                border: none
+                align-self: center
+                position: absolute
+                bottom: 40px
+                cursor: pointer
+                transition: all 0.5s ease   
+                &:hover
+                    transform: scale(1.05)
+        .footer-section
+            height: 95vh
+            width: 100%
+            .wave-footer
+                height: 40%
+                width: 100%
+                background: url('../images/bg-footer-top-desktop.svg')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: bottom
+            .content-footer
+                height: 60%
+                width: 100%
+                background-color: $cvdarkcyan
+                display: flex
+                justify-content: space-between
+                
+
+
+// footer
+.foo-cont-left
+    color: #fff
+    font-family: $ffopensans
+    font-weight: normal
+    width: 40%
+    padding: 0.5% 2%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .icons-social
+        font-size: 30px
+        margin: 0 auto
+        i
+            margin: 0 5px
+    
+
+.foo-cont-right
+    color: #fff 
+    font-family: $ffopensans
+    font-weight: normal
+    width: 40%
+    padding: 2% 2%
+    h1
+        margin-bottom: 20px
+    p
+        margin-bottom: 20px
+    form
+        display: flex
+        input
+            border-radius: 5px
+            width: 250px
+        button
+            width: 100px
+            padding: 5px
+            margin-left: 5px
+            border: none
+            background-color: $cpink
+            color: #fff
+            border-radius: 5px
+            cursor: pointer
+
+
+
+// icons
+.icons
+    display: flex
+    p
+        margin-left: 10px
+
+svg
+    height: 800px
+    width: 100vw
+
+.static
+    position: relative
+    padding-top: 20px
+    img
+        width: 30px
+        position: absolute
+        left: 5px
+        top: 0
+         
+    h1
+        font-size: 3.2rem
+        color: $cvdarkcyan
+    p
+        color: $vpaleblue
+        font-weight: normal
+        font-family: $ffopensans
+
